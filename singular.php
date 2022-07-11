@@ -10,7 +10,7 @@
 			<div class="basis-1/3 px-4">
 
 				<h1 class="text-5xl font-semibold pb-5 md:hidden"><?php echo the_field('name');	?></h1>
-				<img src="<?php echo the_field('profile_picture');	?>" alt="" width="auto" height="auto" class="h-96 w-full object-cover" />
+				<img src="<?php echo the_field('profile_picture');	?>" alt="<?php echo the_field('name');	?>" width="auto" height="auto" class="h-96 w-full object-cover" />
 				<div class="py-4 my-2 border-b border-b-zinc-500">
 					<h3 class="font-bold text-lg uppercase py-2">Location</h3>
 					<p class="text-zinc-700"><?php echo the_field('location'); ?></p>
