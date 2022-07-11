@@ -19,6 +19,14 @@
 					<h3 class="font-bold text-lg uppercase py-2">Booking</h3>
 					<a href="mailto:<?php echo the_field('booking');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('booking');	?></a>
 				</div>
+				<?php 
+				$management = get_field('management');
+				if ($management){ ?>
+				<div class="py-4 my-2 border-b border-b-zinc-500">
+					<h3 class="font-bold text-lg uppercase py-2">Management</h3>
+					<a href="mailto:<?php echo the_field('management');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('booking');	?></a>
+				</div>
+				<?php } ?>
 				<div class="py-4 my-2 border-b border-b-zinc-500">
 					<h3 class="font-bold text-lg uppercase py-2">Socials</h3>
 					<?php
@@ -31,30 +39,7 @@
 						}
 					endif; ?>
 				</div>
-				<div class="py-4 my-2 border-b border-b-zinc-500">
-					<h3 class="font-bold text-lg uppercase py-2">Stream</h3>
-					<?php
-					$streams = get_field('stream');
-					if ($streams) :
-						foreach ($streams as &$value) {
-							if ($value) {	?>
-								<a href="<?= $value['url'] ?>" target="<?= $value['target'] ?>" class="block mb-1 text-zinc-700 hover:text-zinc-900 hover:underline"><?= $value['title'] ?></a>
-					<?php	}
-						}
-					endif; ?>
-				</div>
-				<div class="py-4 my-2 border-b border-b-zinc-500">
-					<h3 class="font-bold text-lg uppercase py-2">Downloads</h3>
-					<?php
-					$downloads = get_field('downloads');
-					if ($downloads) :
-						foreach ($downloads as &$value) {
-							if ($value) {	?>
-								<a href="<?= $value['url'] ?>" target="<?= $value['target'] ?>" class="block mb-1 text-zinc-700 hover:text-zinc-900 hover:underline"><?= $value['title'] ?></a>
-					<?php	}
-						}
-					endif; ?>
-				</div>
+
 
 			</div>
 			<div class="basis-2/3 px-4 md:px-12">
