@@ -24,7 +24,7 @@
 				if ($management){ ?>
 				<div class="py-4 my-2 border-b border-b-zinc-500">
 					<h3 class="font-bold text-lg uppercase py-2">Management</h3>
-					<a href="mailto:<?php echo the_field('management');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('booking');	?></a>
+					<a href="mailto:<?php echo the_field('management');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('management');	?></a>
 				</div>
 				<?php } ?>
 				<div class="py-4 my-2 border-b border-b-zinc-500">

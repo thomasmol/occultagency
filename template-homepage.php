@@ -18,7 +18,7 @@ get_header();
             $args = array(
                 'post_type' => 'artists',
                 'post_status' => 'publish',
-                'posts_per_page' => 8,
+                'posts_per_page' => 100,
                 'orderby' => 'title',
                 'order' => 'ASC',
             );
