@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="occult, agency, music, dj, artist, artists, techno">
     <meta name="author" content="Thomas Mol">
-    <title></title>
+    <title>occult.agency</title>
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri() . '/favicon/favicon.ico'; ?> ">
@@ -23,7 +23,7 @@
 
 <body>
 <nav>
-	<div class="container mx-auto px-2 md:px-4 text-center">
+	<div class="container mx-auto px-2 md:px-4 text-center flex flex-col">
 		<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" class="mx-auto mt-12 mb-6" alt=""  width="60" />
 		<a href="/" class="text-black mx-auto text-5xl font-sans font-semibold" >occult.agency</a>
 	</div>

@@ -2,9 +2,13 @@
 
 ?>
 <main role="main">
+	<div class="container mx-auto px-4">
+		<a href="/" class="text-zinc-600 hover:underline hover:text-zinc-800 mx-auto text-md font-sans">&lsaquo; all artists</a>
+	</div>
 	<section class="mt-20">
 		<div class="container mx-auto flex flex-col md:flex-row">
 			<div class="basis-1/3 px-4">
+
 				<h1 class="text-5xl font-semibold pb-5 md:hidden"><?php echo the_field('name');	?></h1>
 				<img src="<?php echo the_field('profile_picture');	?>" alt="" width="auto" height="auto" class="h-96 w-full object-cover" />
 				<div class="py-4 my-2 border-b border-b-zinc-500">
