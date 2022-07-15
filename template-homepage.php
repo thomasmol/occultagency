@@ -9,10 +9,8 @@
 get_header();
 ?>
 
-<section id="artists">
+<section id="artists" class="mt-20">
     <div class="container mx-auto px-2 md:px-4">
-        <h1 class="py-12 text-5xl font-semibold">Artists</h1>
-
         <div class="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
             <?php
             $args = array(
