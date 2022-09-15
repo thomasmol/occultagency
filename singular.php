@@ -39,6 +39,9 @@
 						}
 					endif; ?>
 				</div>
+				<div class="py-4 my-2 border-b border-b-zinc-500">
+					<a href="/booking/?artist=<?php echo the_field('name');	?>" class="text-white bg-zinc-800 rounded px-4 py-2 hover:bg-zinc-900">BOOK NOW</a>
+				</div>
 
 
 			</div>

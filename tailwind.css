@@ -18,4 +18,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 /*  run following command to build and watch tailwind css file
  npx tailwindcss -i ./tailwind.css -o ./style.css --watch;  */
-
+@layer components {
+  .btn-primary {
+    @apply rounded bg-zinc-800 px-4 py-2 hover:bg-zinc-900 text-white hover:cursor-pointer;
+  }
+}
