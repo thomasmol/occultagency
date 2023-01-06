@@ -19,7 +19,7 @@
 					<h3 class="font-bold text-lg uppercase py-2">Booking</h3>
 					<a href="mailto:<?php echo the_field('booking');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('booking');	?></a>
 				</div>
-				<?php 
+				<?php
 				$management = get_field('management');
 				if ($management){ ?>
 				<div class="py-4 my-2 border-b border-b-zinc-500">
@@ -39,9 +39,9 @@
 						}
 					endif; ?>
 				</div>
-				<div class="py-4 my-2 border-b border-b-zinc-500">
-					<a href="/booking/?artist=<?php echo the_field('name');	?>" class="text-white bg-zinc-800 rounded px-4 py-2 hover:bg-zinc-900">BOOK NOW</a>
-				</div>
+				<!-- <div class="py-4 my-2 border-b border-b-zinc-500">
+					<a href="/booking/?artist=<?php // echo the_field('name');	?>" class="text-white bg-zinc-800 rounded px-4 py-2 hover:bg-zinc-900">BOOK NOW</a>
+				</div> -->
 
 
 			</div>
@@ -49,6 +49,16 @@
 				<h1 class="text-7xl font-semibold pb-10 hidden md:block"><?php echo the_field('name');	?></h1>
 				<div class="space-y-2 text-lg text-zinc-700">
 					<?php echo the_field('description');	?>
+				</div>
+				<div class="mt-4 py-10">
+				<?php
+					$iframe = get_field('youtube_embed');
+					if ($iframe) :
+							// Add extra attributes to iframe HTML.
+							$attributes = 'class="w-full aspect-video"';
+							$iframe = str_replace('width="640" height="360"', $attributes, $iframe);
+							echo $iframe;
+					endif; ?>
 				</div>
 			</div>
 		</div>
