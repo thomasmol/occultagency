@@ -2,6 +2,16 @@
 
 ?>
 <main role="main">
+	<nav>
+		<div class="container mx-auto px-2 md:px-4 text-center flex flex-col">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" class="mx-auto mt-12 mb-6" alt="occult agency logo" width="60" />
+			<a href="/" class="text-black mx-auto text-3xl sm:text-5xl font-sans font-semibold">occult.agency</a>
+			<p class="font-light">Amsterdam - Berlin - Geneva - London - Milan</p>
+			<div class="text-right">
+				<a href="/about" class="hover:underline">contact &amp; about</a>
+			</div>
+		</div>
+	</nav>
 	<div class="container mx-auto px-4">
 		<a href="/" class="text-zinc-600 hover:underline hover:text-zinc-800 mx-auto text-md font-sans">&lsaquo; all artists</a>
 	</div>
@@ -21,11 +31,11 @@
 				</div>
 				<?php
 				$management = get_field('management');
-				if ($management){ ?>
-				<div class="py-4 my-2 border-b border-b-zinc-500">
-					<h3 class="font-bold text-lg uppercase py-2">Management</h3>
-					<a href="mailto:<?php echo the_field('management');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('management');	?></a>
-				</div>
+				if ($management) { ?>
+					<div class="py-4 my-2 border-b border-b-zinc-500">
+						<h3 class="font-bold text-lg uppercase py-2">Management</h3>
+						<a href="mailto:<?php echo the_field('management');	?>" class="text-zinc-700 hover:underline hover:text-zinc-900 hover:underline-offset-2"><?php echo the_field('management');	?></a>
+					</div>
 				<?php } ?>
 				<div class="py-4 my-2 border-b border-b-zinc-500">
 					<h3 class="font-bold text-lg uppercase py-2">Socials</h3>
@@ -40,7 +50,8 @@
 					endif; ?>
 				</div>
 				<!-- <div class="py-4 my-2 border-b border-b-zinc-500">
-					<a href="/booking/?artist=<?php // echo the_field('name');	?>" class="text-white bg-zinc-800 rounded px-4 py-2 hover:bg-zinc-900">BOOK NOW</a>
+					<a href="/booking/?artist=<?php // echo the_field('name');
+																		?>" class="text-white bg-zinc-800 rounded px-4 py-2 hover:bg-zinc-900">BOOK NOW</a>
 				</div> -->
 
 
@@ -51,13 +62,13 @@
 					<?php echo the_field('description');	?>
 				</div>
 				<div class="mt-4 py-10">
-				<?php
+					<?php
 					$iframe = get_field('youtube_embed');
 					if ($iframe) :
-							// Add extra attributes to iframe HTML.
-							$attributes = 'class="w-full aspect-video"';
-							$iframe = str_replace('width="640" height="360"', $attributes, $iframe);
-							echo $iframe;
+						// Add extra attributes to iframe HTML.
+						$attributes = 'class="w-full aspect-video"';
+						$iframe = str_replace('width="640" height="360"', $attributes, $iframe);
+						echo $iframe;
 					endif; ?>
 				</div>
 			</div>
