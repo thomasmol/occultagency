@@ -9,8 +9,11 @@
 
 get_header();
 ?>
-<section class="h-auto md:h-[800px] bg-cover bg-center overflow-hidden" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/background.webp')">
-    <div class="grid lg:grid-cols-3 gap-4 items-center h-full py-12">
+<section class="min-h-screen bg-cover bg-center overflow-hidden flex flex-col justify-between" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/background.webp')">
+    <div class="text-right mt-4 mx-10">
+        <a href="/about" class="hover:underline text-white ">contact &amp; about</a>
+    </div>
+    <div class="grid lg:grid-cols-3 gap-4 items-center">
         <div class="text-white text-base font-thin px-8 lg:justify-self-end max-w-xl">
             <?php the_field('homepage_text'); ?>
         </div>
@@ -21,22 +24,23 @@ get_header();
                 </svg>
                 <a href="/" class=" mx-auto text-3xl sm:text-5xl font-sans font-semibold">occult.agency</a>
                 <p class="font-light">Amsterdam - Berlin - Geneva - London - Milan</p>
-                <div class="text-right">
-                    <a href="/about" class="hover:underline">contact &amp; about</a>
-                </div>
             </div>
         </nav>
     </div>
-    <div class="text-center text-white text-lg -mt-14 py-2 z-10 mx-auto">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-center mx-auto inline-block">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
-        </svg>
-
+    <div class="text-center text-white text-lg py-2 z-10 mx-auto">
+        <a href="#artists">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-center mx-auto inline-block">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+        </a>
     </div>
 </section>
 
 <section id="artists" class="mt-20">
     <div class="container mx-auto px-2 md:px-4">
+    <div class="text-right pb-4">
+        <a href="/about" class="hover:underline text-black ">contact &amp; about</a>
+    </div>
         <div class="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-4">
             <?php
             $args = array(
