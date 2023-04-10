@@ -1449,11 +1449,6 @@ select {
   margin-right: 2.5rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .mt-12 {
   margin-top: 3rem;
 }
@@ -1474,12 +1469,16 @@ select {
   margin-top: 1rem;
 }
 
-.-mt-14 {
-  margin-top: -3.5rem;
+.mt-0 {
+  margin-top: 0px;
 }
 
-.mt-3 {
-  margin-top: 0.75rem;
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .block {
@@ -1514,24 +1513,12 @@ select {
   height: 24rem;
 }
 
-.h-\[600px\] {
-  height: 600px;
-}
-
-.h-full {
-  height: 100%;
-}
-
 .h-80 {
   height: 20rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.max-h-screen {
-  max-height: 100vh;
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -1635,6 +1622,10 @@ select {
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
+.bg-white\/50 {
+  background-color: rgb(255 255 255 / 0.5);
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1684,11 +1675,6 @@ select {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-}
-
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 
 .px-8 {
@@ -1753,6 +1739,11 @@ select {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -1845,6 +1836,15 @@ select {
   background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-white\/80:hover {
+  background-color: rgb(255 255 255 / 0.8);
+}
+
 .hover\:text-zinc-800:hover {
   --tw-text-opacity: 1;
   color: rgb(39 39 42 / var(--tw-text-opacity));
@@ -1862,6 +1862,12 @@ select {
 
 .hover\:underline-offset-2:hover {
   text-underline-offset: 2px;
+}
+
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:grayscale-0:hover {

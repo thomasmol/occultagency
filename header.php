@@ -23,9 +23,8 @@
 </head>
 
 <body>
-<div class="bottom-5 right-5 fixed z-50 bg-white bg-opacity-50 rounded-lg backdrop-blur-sm">
-    <a href="https://linktr.ee/occultagency" target="_blank" class="p-3 block">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/linktree.svg" alt="linktree" class="h-6 w-6">
-    </a>
-</div>
-
+    <div class="bottom-5 right-5 fixed z-50 hover:bg-white/80 hover:shadow-lg bg-white/50 rounded-lg backdrop-blur-sm">
+        <a href="https://linktr.ee/occultagency" target="_blank" class="p-3 block">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/linktree.svg" alt="linktree" class="h-6 w-6">
+        </a>
+    </div>
