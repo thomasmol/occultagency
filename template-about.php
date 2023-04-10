@@ -17,11 +17,9 @@ get_header();
         </div>
     </nav>
     <section class="container mx-auto px-2 md:px-1 ">
-        <div class="prose max-w-none">
-            <?php
-            the_content();
-            ?>
-        </div>
+        <?php
+        the_content();
+        ?>
     </section>
 </main><!-- #site-content -->
 <?php get_footer(); ?>
